@@ -1,10 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import LottieView from 'lottie-react-native'
+import React, { useRef } from 'react'
 
 export default function Oya() {
   return (
     <View style={styles.container}>
       <Text>oya</Text>
+      <TouchableOpacity>
+      <LottieView style={{flex:1, backgroundColor: 'white'}} ref={ref} source={json} loop={false} />
+      </TouchableOpacity>
     </View>
   )
 }
