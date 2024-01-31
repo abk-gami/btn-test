@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Lottie1 from './test';
+import Oya from './oya';
 
 export default function App() {
   return (
     <View style={styles.container}>
       {/* <Text>Open up App.js to start working on your app!</Text> */}
-      <Lottie1/>
+      {/* <Lottie1/> */}
+      <Oya/>
       <StatusBar style="auto" />
     </View>
   );
