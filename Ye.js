@@ -1,18 +1,22 @@
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View, Dimensions } from 'react-native'
 import LottieView from 'lottie-react-native'
 import React, { useRef } from 'react'
 
+const {height, width} = Dimensions.get('screen')
 export default function Ye() {
     const ref = useRef()
     return (
         <View style={styles.container}>
           {/* <Text>oya</Text> */}
-          <View style={{  justifyContent: 'center'  }}>
+          <View 
+           style={{  justifyContent: 'center',   }}
+         >
 
           <TouchableOpacity style={styles.btn}
           onPress={() => ref.current.play()}
           >
-          <LottieView style={{flex: 1, backgroundColor: '#ffffff'}} ref={ref} source={json} loop={false} />
+            <Text> Ship Order</Text>
+          <LottieView style={{flex: 1, backgroundColor: '#ffffff', }} ref={ref} source={json} loop={false} />
 
           </TouchableOpacity>
           </View>
@@ -31,10 +35,11 @@ const styles = StyleSheet.create({
     },
 
     btn:{
-        // flex: 1,
+        height: height * 0.08,
+        width: width * 0.7,
+        padding: 10,
         backgroundColor: '#ffffff',
-        height: '50%',
-        width: 250
+        borderRadius: 30
     }
 })
 
