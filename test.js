@@ -7,7 +7,7 @@ export default function Lottie1() {
     return (
         <View style={{ flex: 1 }}>
             <View style={{ flex: 1 }}>
-                <LottieView style={{flex:1}} ref={ref} source={json} loop={false} />
+                <LottieView style={{flex:1, backgroundColor: 'green'}} ref={ref} source={json} loop={false} />
             </View>
             <View style={{ padding: 20 }}>
                 <Button title='animate' onPress={() => ref.current.play()} />
