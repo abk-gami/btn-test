@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function oya() {
+export default function Oya() {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>oya</Text>
     </View>
   )
@@ -11,7 +11,7 @@ export default function oya() {
 
 const styles = StyleSheet.create({
     container:{
-        flex:1,
+        flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
     }
