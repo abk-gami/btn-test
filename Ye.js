@@ -6,11 +6,14 @@ export default function Ye() {
     const ref = useRef()
     return (
         <View style={styles.container}>
-          <Text>oya</Text>
-          <View>
+          {/* <Text>oya</Text> */}
+          <View style={{  justifyContent: 'center'  }}>
 
-          <TouchableOpacity style={styles.btn}>
-          <LottieView style={{flex: 1 , backgroundColor: '#723131'}} ref={ref} source={json} loop={false} />
+          <TouchableOpacity style={styles.btn}
+          onPress={() => ref.current.play()}
+          >
+          <LottieView style={{flex: 1, backgroundColor: '#ffffff'}} ref={ref} source={json} loop={false} />
+
           </TouchableOpacity>
           </View>
         </View>
@@ -23,11 +26,15 @@ const styles = StyleSheet.create({
         marginTop: 45,
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: 'black',
+        width: '100%'
     },
+
     btn:{
-        flex: 1,
-        backgroundColor: 'green',
-        height: 50
+        // flex: 1,
+        backgroundColor: '#ffffff',
+        height: '50%',
+        width: 250
     }
 })
 
