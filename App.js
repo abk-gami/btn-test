@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Lottie1 from './test';
 import Ye from './Ye';
-import RefreshControlEg from './oya';
+import RefreshControlEg from './Oya';
 
 export default function App() {
   return (
