@@ -30,7 +30,7 @@ export default function Ye() {
         onPress={change}
           >
             <Text> {animate}</Text>
-          <LottieView style={{flex: 1, backgroundColor: '#ffffff',  }} ref={ref} source={json} loop={false} />
+          <LottieView style={{ backgroundColor: '#ffffff',  }} ref={ref} source={json} loop={false} />
 
           </TouchableOpacity>
           </View>
