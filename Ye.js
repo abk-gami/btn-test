@@ -14,9 +14,9 @@ export default function Ye() {
     const [animate, setAnimate] = useState('Ship Order')
 
     const change = () => {
-      setAnimate( 'Ship Order' ?   'Processing'  : 'k')
+      setAnimate( 'Ship Order' ?   'Processing...'  : 'k')
         ref.current.play()
-        wait(4200).then(() => setAnimate('Order shipped'));
+        wait(4300).then(() => setAnimate('Order shipped'));
     }
 
     return (
@@ -29,7 +29,7 @@ export default function Ye() {
         //   onPress={() => ref.current.play()}
         onPress={change}
           >
-            <Text> {animate}</Text>
+            <Text style={{fontWeight: '800', fontSize: 15,}}> {animate}</Text>
           <LottieView style={{flex: 1, backgroundColor: '#ffffff',  }} ref={ref} source={json} loop={false} />
 
           </TouchableOpacity>
