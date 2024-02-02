@@ -14,8 +14,8 @@ export default function Ye() {
     const [animate, setAnimate] = useState('Ship Order')
 
     const change = () => {
-      setAnimate( 'Ship Order' ?   ref.current.play()  : 'Processing')
-        // ref.current.play()
+      setAnimate( 'Ship Order' ?   'Processing'  : 'k')
+        ref.current.play()
         wait(4200).then(() => setAnimate('Order shipped'));
     }
 
