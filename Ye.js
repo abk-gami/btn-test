@@ -1,21 +1,31 @@
 import { StyleSheet, Text, TouchableOpacity, View, Dimensions } from 'react-native'
 import LottieView from 'lottie-react-native'
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 
 const {height, width} = Dimensions.get('screen')
 export default function Ye() {
     const ref = useRef()
+
+    const [animate, setAnimate] = useState('Ship Order')
+
+    const change = () => {
+        ref.current.play()
+        setAnimate('Order shipped')
+        setAnimate(animate)
+        
+        
+    }
     return (
         <View style={styles.container}>
-          {/* <Text>oya</Text> */}
           <View 
            style={{  justifyContent: 'center',   }}
          >
 
           <TouchableOpacity style={styles.btn}
-          onPress={() => ref.current.play()}
+        //   onPress={() => ref.current.play()}
+        onPress={change}
           >
-            <Text> Ship Order</Text>
+            <Text> {animate}</Text>
           <LottieView style={{flex: 1, backgroundColor: '#ffffff', }} ref={ref} source={json} loop={false} />
 
           </TouchableOpacity>
