@@ -7,6 +7,7 @@ const wait = (timeout) => {
 }
 
 const {height, width} = Dimensions.get('screen')
+
 export default function Ye() {
     const ref = useRef()
 
@@ -15,8 +16,8 @@ export default function Ye() {
     const change = () => {
         ref.current.play()
         wait(4200).then(() => setAnimate('Order shipped'));
-        
     }
+    
     return (
         <View style={styles.container}>
           <View 
