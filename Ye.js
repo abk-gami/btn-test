@@ -14,7 +14,7 @@ export default function Ye() {
 
     const change = () => {
         ref.current.play()
-        wait(4100).then(() => setAnimate('Order shipped'));
+        wait(4200).then(() => setAnimate('Order shipped'));
         
     }
     return (
