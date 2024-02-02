@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Lottie1 from './test';
 import Ye from './Ye';
+import RefreshControlEg from './oya';
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       {/* <Text>Open up App.js to start working on your app!</Text> */}
       {/* <Lottie1/> */}
       <Ye/>
+      <RefreshControlEg/>
       <StatusBar style="auto" />
     </View>
   );
