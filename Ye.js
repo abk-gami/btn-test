@@ -2,6 +2,10 @@ import { StyleSheet, Text, TouchableOpacity, View, Dimensions } from 'react-nati
 import LottieView from 'lottie-react-native'
 import React, { useRef, useState } from 'react'
 
+const wait = (timeout) => {
+  return new Promise(resolve => setTimeout(resolve, timeout));
+}
+
 const {height, width} = Dimensions.get('screen')
 export default function Ye() {
     const ref = useRef()
@@ -10,8 +14,7 @@ export default function Ye() {
 
     const change = () => {
         ref.current.play()
-        setAnimate('Order shipped')
-        
+        wait(3000).then(() => setAnimate('Order shipped'));
         
     }
     return (
