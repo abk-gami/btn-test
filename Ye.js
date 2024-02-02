@@ -17,7 +17,7 @@ export default function Ye() {
         ref.current.play()
         wait(4200).then(() => setAnimate('Order shipped'));
     }
-    
+
     return (
         <View style={styles.container}>
           <View 
@@ -29,7 +29,7 @@ export default function Ye() {
         onPress={change}
           >
             <Text> {animate}</Text>
-          <LottieView style={{flex: 1, backgroundColor: '#ffffff', }} ref={ref} source={json} loop={false} />
+          <LottieView style={{flex: 1, backgroundColor: '#ffffff',  }} ref={ref} source={json} loop={false} />
 
           </TouchableOpacity>
           </View>
@@ -52,7 +52,10 @@ const styles = StyleSheet.create({
         width: width * 0.7,
         padding: 10,
         backgroundColor: '#ffffff',
-        borderRadius: 30
+        borderRadius: 30,
+        alignItems: 'center',
+        justifyContent: 'center',
+        overflow: 'hidden'
     }
 })
 
