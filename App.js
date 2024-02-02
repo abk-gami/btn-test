@@ -10,7 +10,7 @@ export default function App() {
       {/* <Text>Open up App.js to start working on your app!</Text> */}
       {/* <Lottie1/> */}
       <Ye/>
-      <RefreshControlEg/>
+      {/* <RefreshControlEg/> */}
       <StatusBar style="auto" />
     </View>
   );
