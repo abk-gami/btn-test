@@ -11,7 +11,6 @@ export default function Ye() {
     const change = () => {
         ref.current.play()
         setAnimate('Order shipped')
-        setAnimate(animate)
         
         
     }
