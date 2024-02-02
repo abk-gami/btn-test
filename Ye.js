@@ -14,6 +14,7 @@ export default function Ye() {
     const [animate, setAnimate] = useState('Ship Order')
 
     const change = () => {
+      setAnimate( if setAnimate('animate')?  'Ship Order':'Invoice Delivery')
         ref.current.play()
         wait(4200).then(() => setAnimate('Order shipped'));
     }
@@ -53,8 +54,8 @@ const styles = StyleSheet.create({
         padding: 10,
         backgroundColor: '#ffffff',
         borderRadius: 30,
-        alignItems: 'center',
-        justifyContent: 'center',
+        // alignItems: 'center',
+        // justifyContent: 'center',
         overflow: 'hidden'
     }
 })
